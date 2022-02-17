@@ -1,0 +1,13 @@
+.NavWrapper {
+    background: var(--mainBlue);
+}
+
+.NavLink {
+    color: var(--mainWhite) !important;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.Brand {
+    padding: 0 0 0 1rem;
+}

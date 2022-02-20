@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Accordion, ProgressBar } from 'react-bootstrap';
+import classes from './skillsContainer.module.css';
 
 class SkillsContainer extends Component {
     render() {
         return (
-            <Container>
+            <Container className={classes.content}>
                 <Row>
                     <h1>Skills</h1>
                         <hr/>

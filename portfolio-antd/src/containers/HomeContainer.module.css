@@ -1,0 +1,10 @@
+.contentStyle {
+    height: 50vh;
+    color: #000;
+    line-height: 160px;
+    text-align: center;
+    background-image: url("https://picsum.photos/1500/400");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Col, Container, Row, Card, Button, CardGroup } from 'react-bootstrap';
+import classes from './aboutContainer.module.css';
 
 class AboutContainer extends Component {
     render() {
         return(
-            <Container>
+            <Container className={classes.content}>
                 <Row>
                     <h1>About Me</h1>
                     <hr/>
@@ -24,29 +25,30 @@ class AboutContainer extends Component {
                     </Col>
                     <Col>
                         <h2>Education</h2>
-                        
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="https://picsum.photos/id/121/200/140" />
-                            <Card.Body>
-                                <Card.Title>Northern Arizona University</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card> 
-                        <Card style={{ width: '15rem' }}>
-                            <Card.Img variant="top" src="https://picsum.photos/id/189/200/140" />
-                            <Card.Body>
-                                <Card.Title>Liberty High School/West-MEC</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
-                            </Card.Body>
-                        </Card>
+                        <CardGroup>
+                            <Card style={{ width: '15rem' }}>
+                                <Card.Img variant="top" src="https://picsum.photos/id/121/200/140" />
+                                <Card.Body>
+                                    <Card.Title>Northern Arizona University</Card.Title>
+                                    <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                    </Card.Text>
+                                    <Button variant="primary">Go somewhere</Button>
+                                </Card.Body>
+                            </Card> 
+                            <Card style={{ width: '15rem' }}>
+                                <Card.Img variant="top" src="https://picsum.photos/id/189/200/140" />
+                                <Card.Body>
+                                    <Card.Title>Liberty High School/West-MEC</Card.Title>
+                                    <Card.Text>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                    </Card.Text>
+                                    <Button variant="primary">Go somewhere</Button>
+                                </Card.Body>
+                            </Card>
+                        </CardGroup>
                     </Col>
                 </Row>
             </Container>
